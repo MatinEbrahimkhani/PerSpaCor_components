@@ -1,8 +1,6 @@
-Thank you for sharing your perspacor repository! It's great that you've created tools for Persian text processing. Let's enhance your README to provide clear information for potential users and contributors. Here's a revised version:
 
----
 
-# Perspacor: Persian Text Correction Tool
+# Perspacor: Persian space corrector
 
 Perspacor is a free and open-source tool designed to correct spaces and half-spaces (ZWNJ) in Persian written text. Whether you're working on a document, a website, or any other project, Perspacor ensures accurate spacing for a polished presentation.
 
