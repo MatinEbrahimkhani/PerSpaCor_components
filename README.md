@@ -19,6 +19,7 @@ Perspacor is a free and open-source tool designed to correct spaces and half-spa
 2. Usage:
    - Import the labeler and text preprocessor components into your Python project.
    - Call the appropriate functions to correct spaces and half-spaces in your Persian text.
+   - use the corrector.py to correct your documents.
 
 
 ## Contributing
