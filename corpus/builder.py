@@ -62,7 +62,7 @@ class Builder:
                                   ' + ': '+',
                                   ' @ ': '@'}
 
-    def __bij_generate_sentence_tokenized(self, tokens):
+    def __bij_generate_sentence_tokenized(self, tokens, pos):
         """
         generates a list of sentences that each one is divided with at least one of sent_divs
 
@@ -71,12 +71,15 @@ class Builder:
         :return:
         """
         sentence = []
+        sent_pos = []
         for i, token in enumerate(tokens):
             if token not in self._sent_div:
                 sentence.append(token)
+                sent_pos.append(pos[i])
             else:
                 # If the token is a divider, add it to the sentence
                 sentence.append(token)
+                sent_pos.append(pos[i])
                 # If the sentence is non-empty, yield it
                 try:
                     if tokens[i + 1] in self._sent_div:
@@ -85,10 +88,11 @@ class Builder:
                 except IndexError:
                     pass
                 if sentence:
-                    yield sentence
+                    yield [sentence, sent_pos]
                     sentence = []
+                    sent_pos = []
         if sentence:
-            yield sentence
+            yield sentence, sent_pos
 
     def _correct_punctuation(self, text):
         """
@@ -120,30 +124,51 @@ class Builder:
         if corpus_name == "bijankhan":
             lines = text.split('\n')
             tokens = ['\u200c'.join(line.split()[:-1]) for line in lines]
-            sent_toks = list(self.__bij_generate_sentence_tokenized(tokens))
-            return sent_toks[:-1]
+            pos = [line.split()[-1:] for line in lines]
+            sent_results = list(self.__bij_generate_sentence_tokenized(tokens, pos))
+
+            return sent_results
         # --------------------------------------- PEYKAREH ---------------------------------------
         elif corpus_name == "peykareh":
             # Splitting the text into lines using the newline character as a delimiter and splitting each line into
             # tokens using whitespace as a delimiter
-            tokens = [line.split()[:1] for line in text.split("\n")]
+            # Initialize empty lists for tokens and POS
+            tokens = []
+            pos = []
+
+            # Iterate over each line and split it into tokens and POS
+            for line in text.split("\n"):
+                parts = line.split()
+                if parts:
+                    tokens.append(parts[0])
+                    pos.append(parts[1])
+                else:
+                    tokens.append([])
+                    pos.append([])
 
             # Initializing variables
+            # overall results
             sent_toks = []
+            sent_pos = []
+            # initiated for each sentence
             sentence_tokens = []
+            sentence_pos = []
 
             # Iterating over the tokens
-            for item in tokens:
-                if item:  # if the list is not empty
-                    sentence_tokens.append(item[0])
+            for tok, p in zip(tokens, pos):
+                if tok:  # if the list is not empty
+                    sentence_tokens.append(tok)
+                    sentence_pos.append(p)
                 else:  # if the list is empty, indicating end of a sentence
                     sent_toks.append(sentence_tokens)
+                    sent_pos.append(sentence_pos)
                     sentence_tokens = []
+                    sentence_pos = []
 
             # add the last sentence if it doesn't end with an empty list
             # if sentence_tokens:
             #     sent_toks.append(sentence_tokens)
-            return sent_toks[:-1]
+            return zip(sent_toks, sent_pos)
         else:
             raise Exception(f"Invalid corpus name: {corpus_name}.")
 
@@ -205,8 +230,13 @@ class Builder:
         """
         if corpus_type not in list(Type):
             raise Exception("invalid corpus type requested")
-        sent_toks = self._process_corpus(corpus_name)
-
+        sent_results= self._process_corpus(corpus_name)
+        sent_toks=[]
+        sent_pos=[]
+        for res in sent_results:
+            sent_toks.append(res[0])
+            sent_pos.append(res[1])
+        del sent_results
         if corpus_type.value == Type.whole_raw.value:
             toks = [t for sentence in sent_toks for t in sentence]
             whole = " ".join(toks)
@@ -226,8 +256,8 @@ class Builder:
             return sentences
 
         elif corpus_type.value == Type.sents_tok.value:
-            self._save_corpus(sent_toks, corpus_name, corpus_type)
-            return sent_toks
+            # self._save_corpus(sent_toks, corpus_name, corpus_type)
+            return sent_toks, sent_pos
 
     def build_all(self):
         corpus_names = self._filehandler.corpus_names()
