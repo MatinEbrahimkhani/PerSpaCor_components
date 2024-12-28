@@ -1,0 +1,71 @@
+BERT,برت
+CharBERT,کر برت
+Computer Science,علوم کامپیوتر
+Conditional Random Fields,فیلدهای تصادفی شرطی
+Dictionary,لغت‌نامه
+Dictionary-based Methods,روش‌های لغت‌نامه محور
+Editor,ویراستار
+Generative-AI,هوش مصنوعی مولد
+Large Language Models,مدل‌های زبانی بزرگ
+Learning Methods,روش‌های یادگیری محور
+Masked Language Modeling,مدل‌سازی زبان ماسک‌دار
+N-gram,چندگرام
+Named Entity Recognition(NER),تشخیص موجودیت‌های نامدار
+Natural Language Processing,پردازش زبان طبیعی
+Next Sentence Prediction,پیش‌بینی جمله بعدی
+Peripheral context, محتوای محیطی
+RoBERTa,روبرتا
+Rule-based Methods,روش‌های قانون محور
+Unicode,یونی‌کد
+bidirectional-encoder, رمزگذار دوسویه
+byte-pair encoding,جنگاشتگر سطح بایت
+computer vision,بینایی کامپیتر
+context vectors,بردار‌های زمینه
+context window,پنجره زمینه
+contextual relationships,روابط متنی
+contextual relationships,روابط زمینه‌ای
+contextualized,زمینه‌سازی شده
+contextualized representations,بازنمایی‌های متنی
+dependency parser,تجزیه وابستگی
+down stream task,وظیفه پایین دستی
+effective batch size,اندازه دسته‌ی آموزشی موثر
+embedding,نگاشتگری
+embedding layer,لایه نگاشتگر
+encoder only transformer models, مدل ترانسفورمر فقط رمزگذار
+epochs,ایپاک
+fine-tune,تنظیم دقیق
+gradient accumulation,گرادیان تجمعی
+human annotations,حاشیه‌نویسی انسانی
+identifier(id),نشانه
+integration of the spatial pyramid,ادغام هرم فضایی
+key-value,کلید-مقدار
+layer aware,لایه‌آگاه
+learning rate, نرخ یادگیری
+lemmatization,لماتایز‌سازی
+logit,لوجیت
+mini batch,مینی‌بچ، دسته آموزشی کوچک
+multi-head attention,مکانیزم توجه چند سر موازی
+normalization,نرمال‌سازی
+one-hot vector,برداری که یکی یک و مابقی صفر است
+padding,پوشال‌گذاری
+part of speech (POS),اجزای کلام
+part of speech tagging,برچسب‌زدن اجزای کلام
+positional encoding,رمزگذاری موقعیتی
+pre-trained, قبل آموزش داده‌ شده
+question answering,پاسخ به سوال
+self supervised,خود نظارتی
+sentiment analysis,تجزیه و تحلیل احساسات
+sequence classification,طبقه‌بندی توالی
+spatio-temporal,مکانی-زمانی
+testing,آزمون
+text classification,طبقه بندی متن
+token,توکن
+token classification,طبقه‌بندی توکن
+tokenization,توکنیزه‌سازی
+tokenizer,توکنیزه‌ساز
+train batch size,اندازه دسته آموزشی
+training,آموزش
+un-embedding layer,پاد نگاشتگر
+validation,راستی‌آزمایی
+word embedding,نگاشت‌ کلمه
+word segmentation,تقسیم‌بندی کلمات

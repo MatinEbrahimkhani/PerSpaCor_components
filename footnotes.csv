@@ -1,0 +1,71 @@
+Computer Science,علوم کامپیوتر
+Natural Language Processing,پردازش زبان طبیعی
+Peripheral context, محتوای محیطی
+Unicode,یونی‌کد
+Editor,ویراستار
+Dictionary,لغت‌نامه
+Dictionary-based Methods,روش‌های لغت‌نامه محور
+Rule-based Methods,روش‌های قانون محور
+Learning Methods,روش‌های یادگیری محور
+epochs,ایپاک
+encoder only transformer models, مدل ترانسفورمر فقط رمزگذار
+part of speech (POS),اجزای کلام
+tokenization,توکنیزه‌سازی
+token,توکن
+tokenizer,توکنیزه‌ساز
+identifier(id),نشانه
+Named Entity Recognition(NER),تشخیص موجودیت‌های نامدار
+fine-tune,تنظیم دقیق
+computer vision,بینایی کامپیتر
+Large Language Models,مدل‌های زبانی بزرگ
+Generative-AI,هوش مصنوعی مولد
+bidirectional-encoder, رمزگذار دوسویه
+context vectors,بردار‌های زمینه
+positional encoding,رمزگذاری موقعیتی
+N-gram,چندگرام
+key-value,کلید-مقدار
+multi-head attention,مکانیزم توجه چند سر موازی
+context window,پنجره زمینه
+contextualized,زمینه‌سازی شده
+spatio-temporal,مکانی-زمانی
+contextualized representations,بازنمایی‌های متنی
+contextual relationships,روابط متنی
+contextual relationships,روابط زمینه‌ای
+word embedding,نگاشت‌ کلمه
+human annotations,حاشیه‌نویسی انسانی
+pre-trained, قبل آموزش داده‌ شده
+embedding layer,لایه نگاشتگر
+one-hot vector,برداری که یکی یک و مابقی صفر است
+un-embedding layer,پاد نگاشتگر
+Masked Language Modeling,مدل‌سازی زبان ماسک‌دار
+self supervised,خود نظارتی
+Next Sentence Prediction,پیش‌بینی جمله بعدی
+sequence classification,طبقه‌بندی توالی
+token classification,طبقه‌بندی توکن
+question answering,پاسخ به سوال
+down stream task,وظیفه پایین دستی
+sentiment analysis,تجزیه و تحلیل احساسات
+text classification,طبقه بندی متن
+mini batch,مینی‌بچ، دسته آموزشی کوچک
+learning rate, نرخ یادگیری
+byte-pair encoding,جنگاشتگر سطح بایت
+layer aware,لایه‌آگاه
+integration of the spatial pyramid,ادغام هرم فضایی
+word segmentation,تقسیم‌بندی کلمات
+Conditional Random Fields,فیلدهای تصادفی شرطی
+normalization,نرمال‌سازی
+lemmatization,لماتایز‌سازی
+part of speech tagging,برچسب‌زدن اجزای کلام
+dependency parser,تجزیه وابستگی
+embedding,نگاشتگری
+training,آموزش
+testing,آزمون
+validation,راستی‌آزمایی
+padding,پوشال‌گذاری
+BERT,برت
+RoBERTa,روبرتا
+CharBERT,کر برت
+logit,لوجیت
+train batch size,اندازه دسته آموزشی
+gradient accumulation,گرادیان تجمعی
+effective batch size,اندازه دسته‌ی آموزشی موثر

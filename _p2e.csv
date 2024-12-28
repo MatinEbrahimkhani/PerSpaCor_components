@@ -1,0 +1,71 @@
+bidirectional-encoder, رمزگذار دوسویه
+pre-trained, قبل آموزش داده‌ شده
+Peripheral context, محتوای محیطی
+encoder only transformer models, مدل ترانسفورمر فقط رمزگذار
+learning rate, نرخ یادگیری
+testing,آزمون
+training,آموزش
+part of speech (POS),اجزای کلام
+integration of the spatial pyramid,ادغام هرم فضایی
+train batch size,اندازه دسته آموزشی
+effective batch size,اندازه دسته‌ی آموزشی موثر
+epochs,ایپاک
+contextualized representations,بازنمایی‌های متنی
+BERT,برت
+one-hot vector,برداری که یکی یک و مابقی صفر است
+context vectors,بردار‌های زمینه
+part of speech tagging,برچسب‌زدن اجزای کلام
+computer vision,بینایی کامپیتر
+sentiment analysis,تجزیه و تحلیل احساسات
+dependency parser,تجزیه وابستگی
+Named Entity Recognition(NER),تشخیص موجودیت‌های نامدار
+word segmentation,تقسیم‌بندی کلمات
+fine-tune,تنظیم دقیق
+token,توکن
+tokenizer,توکنیزه‌ساز
+tokenization,توکنیزه‌سازی
+byte-pair encoding,جنگاشتگر سطح بایت
+human annotations,حاشیه‌نویسی انسانی
+self supervised,خود نظارتی
+validation,راستی‌آزمایی
+positional encoding,رمزگذاری موقعیتی
+contextual relationships,روابط زمینه‌ای
+contextual relationships,روابط متنی
+RoBERTa,روبرتا
+Rule-based Methods,روش‌های قانون محور
+Dictionary-based Methods,روش‌های لغت‌نامه محور
+Learning Methods,روش‌های یادگیری محور
+contextualized,زمینه‌سازی شده
+text classification,طبقه بندی متن
+sequence classification,طبقه‌بندی توالی
+token classification,طبقه‌بندی توکن
+Computer Science,علوم کامپیوتر
+Conditional Random Fields,فیلدهای تصادفی شرطی
+embedding layer,لایه نگاشتگر
+layer aware,لایه‌آگاه
+Dictionary,لغت‌نامه
+lemmatization,لماتایز‌سازی
+logit,لوجیت
+Masked Language Modeling,مدل‌سازی زبان ماسک‌دار
+Large Language Models,مدل‌های زبانی بزرگ
+spatio-temporal,مکانی-زمانی
+multi-head attention,مکانیزم توجه چند سر موازی
+mini batch,مینی‌بچ، دسته آموزشی کوچک
+normalization,نرمال‌سازی
+identifier(id),نشانه
+embedding,نگاشتگری
+word embedding,نگاشت‌ کلمه
+Generative-AI,هوش مصنوعی مولد
+down stream task,وظیفه پایین دستی
+Editor,ویراستار
+un-embedding layer,پاد نگاشتگر
+question answering,پاسخ به سوال
+Natural Language Processing,پردازش زبان طبیعی
+context window,پنجره زمینه
+padding,پوشال‌گذاری
+Next Sentence Prediction,پیش‌بینی جمله بعدی
+N-gram,چندگرام
+CharBERT,کر برت
+key-value,کلید-مقدار
+gradient accumulation,گرادیان تجمعی
+Unicode,یونی‌کد
